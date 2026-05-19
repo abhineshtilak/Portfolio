@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhinesh Kumar Tilak — Full-Stack Developer & Technical Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">AKT<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#upcoming">Upcoming</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+      <li><a href="#upcoming" class="mobile-link">Upcoming</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Abhinesh Kumar Tilak<span class="cursor">|</span></h1>
+      <p class="hero-role">
+        <span class="typed-text" id="typedText"></span><span class="typed-cursor">_</span>
+      </p>
+      <p class="hero-desc">Full-Stack Developer & Technical Trainer based in New Delhi. I build scalable web applications and transform developers through practical, industry-aligned education.</p>
+      <div class="hero-badges">
+        <span class="hero-badge">300+ Students Trained</span>
+        <span class="hero-badge">MERN Stack</span>
+        <span class="hero-badge">Open to Work</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+        <a href="https://github.com/abhineshtilak" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-indicator"><div class="scroll-dot"></div></div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 / About</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <div class="avatar-placeholder">
+              <div class="avatar-initials">AKT</div>
+              <div class="avatar-ring ring1"></div>
+              <div class="avatar-ring ring2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>I'm a <strong>Full-Stack Developer and Technical Trainer</strong> with a proven track record of transforming beginners into confident, job-ready developers. I specialize in building production-grade web applications and designing industry-aligned curriculum across web development and data analytics.</p>
+          <p>My work sits at the intersection of <strong>engineering and education</strong> — whether I'm shipping a full-stack product as CTO of Matrimakres.in or mentoring 30+ students through their first capstone project, I bring the same focus on clarity, quality, and real-world problem solving.</p>
+          <p>I'm actively open to <strong>freelance projects, full-time roles, and training engagements</strong> — particularly in full-stack development, AI integration, and technical education.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="300">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Students Trained</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+              <span class="stat-label">Completion Rate</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="mailto:tilakabhinesh@gmail.com" class="btn btn-primary">Let's Work Together</a>
+            <a href="https://www.abhineshtilak.com" target="_blank" class="btn btn-outline">My Website ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 / Skills</span>
+        <h2>Technologies I Work With</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚡</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">HTML5</span>
+            <span class="stag">CSS3</span>
+            <span class="stag">JavaScript ES6+</span>
+            <span class="stag">React.js</span>
+            <span class="stag">Redux</span>
+            <span class="stag">Tailwind CSS</span>
+            <span class="stag">Bootstrap</span>
+            <span class="stag">WebRTC</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🔧</span>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">Node.js</span>
+            <span class="stag">Express.js</span>
+            <span class="stag">PHP</span>
+            <span class="stag">REST APIs</span>
+            <span class="stag">Socket.io</span>
+            <span class="stag">WebSockets</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗄️</span>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">MongoDB</span>
+            <span class="stag">MySQL</span>
+            <span class="stag">PostgreSQL</span>
+            <span class="stag">Mongoose</span>
+            <span class="stag">Redis</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <h3>AI & Data</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">Prompt Engineering</span>
+            <span class="stag">OpenAI API</span>
+            <span class="stag">Gemini API</span>
+            <span class="stag">Pandas</span>
+            <span class="stag">NumPy</span>
+            <span class="stag">Power BI</span>
+            <span class="stag">Jupyter Notebook</span>
+            <span class="stag">Data Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🚀</span>
+            <h3>DevOps & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">Git & GitHub</span>
+            <span class="stag">Docker</span>
+            <span class="stag">Kubernetes</span>
+            <span class="stag">Netlify</span>
+            <span class="stag">Vercel</span>
+            <span class="stag">Render</span>
+            <span class="stag">Postman</span>
+            <span class="stag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🔐</span>
+            <h3>Security & CS</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">JWT</span>
+            <span class="stag">OAuth 2.0</span>
+            <span class="stag">RBAC</span>
+            <span class="stag">Session Management</span>
+            <span class="stag">DSA</span>
+            <span class="stag">OOP</span>
+            <span class="stag">System Design</span>
+            <span class="stag">MVC Architecture</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 / Experience</span>
+        <h2>Work History</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3>CTO & Full-Stack Developer</h3>
+                <p class="tcard-company">Matrimakres.in <span class="tcard-type">Self-Initiated</span></p>
+              </div>
+              <span class="tcard-date">Oct 2025 – Present</span>
+            </div>
+            <ul class="tcard-points">
+              <li>Built and launched a full-stack spiritual services platform for Delhi NCR — sole owner of UI/UX, backend APIs, and database architecture</li>
+              <li>Developed a full admin panel for managing listings, users, bookings, and content</li>
+              <li>Integrated AI-powered features to enhance service discovery and user personalization</li>
+              <li>Owned end-to-end product lifecycle: design, development, deployment, and maintenance</li>
+            </ul>
+            <div class="tcard-tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">AI Integration</span><span class="tag">Full Product Ownership</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3>Technical Trainer</h3>
+                <p class="tcard-company">American India Foundation <span class="tcard-type">Full-Time</span></p>
+              </div>
+              <span class="tcard-date">Jul 2025 – Mar 2026</span>
+            </div>
+            <ul class="tcard-points">
+              <li>Designed and delivered hands-on curriculum covering HTML, CSS, JavaScript, React, Node.js, SQL, MongoDB, and data analytics for batches of 30+ students</li>
+              <li>Trained 250+ students in full-stack web development and data science — achieved a 100% course completion rate</li>
+              <li>Mentored students through capstone projects, helping them build portfolio-ready applications</li>
+              <li>50% of students secured internships or jobs after course completion</li>
+            </ul>
+            <div class="tcard-tags">
+              <span class="tag">MERN Stack</span><span class="tag">Data Analytics</span><span class="tag">Curriculum Design</span><span class="tag">Mentoring</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3>Freelance Full-Stack Web Dev Instructor</h3>
+                <p class="tcard-company">Online <span class="tcard-type">Freelance</span></p>
+              </div>
+              <span class="tcard-date">Jan 2024 – Jun 2024</span>
+            </div>
+            <ul class="tcard-points">
+              <li>Trained 50+ students online in full-stack web development covering MERN Stack and DevOps</li>
+              <li>Designed self-paced curriculum, coding assignments, and capstone projects tailored to individual learning goals</li>
+              <li>Conducted live sessions via Zoom, managed code reviews on GitHub, tracked progress through Notion</li>
+              <li>Provided 1:1 mentoring and doubt-clearing sessions with a high course completion rate</li>
+            </ul>
+            <div class="tcard-tags">
+              <span class="tag">MERN Stack</span><span class="tag">DevOps</span><span class="tag">1:1 Mentoring</span><span class="tag">Zoom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3>Freelance Full-Stack Developer</h3>
+                <p class="tcard-company">Remote <span class="tcard-type">Freelance</span></p>
+              </div>
+              <span class="tcard-date">Jan 2023 – Jun 2024</span>
+            </div>
+            <ul class="tcard-points">
+              <li>Developed custom web applications for clients across e-commerce, service listings, and portfolio domains</li>
+              <li>Built responsive frontends using React and Tailwind CSS, and REST APIs using Node.js and Express</li>
+              <li>Managed complete project lifecycle — requirements, UI/UX, development, testing, and deployment</li>
+              <li>Integrated Razorpay/Stripe, Google Maps API, and email services for client projects</li>
+            </ul>
+            <div class="tcard-tags">
+              <span class="tag">React</span><span class="tag">Tailwind CSS</span><span class="tag">Node.js</span><span class="tag">Razorpay</span><span class="tag">Client Delivery</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 / Projects</span>
+        <h2>Things I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal">
+          <div class="project-top">
+            <span class="project-label">Live Product</span>
+            <div class="project-links">
+              <a href="https://www.matrimakres.in" target="_blank" class="icon-link" title="Live Site">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Matrimakres.in</h3>
+            <p>Full-stack spiritual services platform for Delhi NCR. Built as CTO — includes an admin panel for listings/bookings, AI-powered service discovery, and role-based user management. End-to-end product ownership from design to deployment.</p>
+          </div>
+          <div class="project-footer">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">AI Integration</span><span class="tag">Admin Panel</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-label">Full-Stack</span>
+            <div class="project-links">
+              <a href="https://wanderlust-hidc.onrender.com/listings" target="_blank" class="icon-link" title="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/abhineshtilak" target="_blank" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Wanderlust — Property Rental Platform</h3>
+            <p>Airbnb-inspired full-stack travel listing platform with property listings, image uploads via Cloudinary, interactive Mapbox maps, reviews, and complete user auth with role-based access control.</p>
+          </div>
+          <div class="project-footer">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Cloudinary</span><span class="tag">Mapbox</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-label">Real-Time</span>
+            <div class="project-links">
+              <a href="https://github.com/abhineshtilak" target="_blank" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Video Conferencing Platform</h3>
+            <p>Real-time video conferencing app with room creation, peer-to-peer video/audio using WebRTC, live chat via Socket.io, and secure user authentication.</p>
+          </div>
+          <div class="project-footer">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">WebRTC</span><span class="tag">Socket.io</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-label">Full-Stack Clone</span>
+            <div class="project-links">
+              <a href="https://github.com/abhineshtilak" target="_blank" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Zerodha — Trading Platform Clone</h3>
+            <p>Full-stack clone of the Zerodha trading platform with real-time stock data visualization, portfolio dashboard, buy/sell functionality, and JWT-based authentication and authorization.</p>
+          </div>
+          <div class="project-footer">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">JWT</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-label">Systems / CLI</span>
+            <div class="project-links">
+              <a href="https://github.com/abhineshtilak" target="_blank" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Custom Version Control System</h3>
+            <p>A Git-inspired version control system built from scratch in Node.js, supporting init, add, commit, log, and diff commands with full local repository management via the File System API.</p>
+          </div>
+          <div class="project-footer">
+            <span class="tag">Node.js</span><span class="tag">JavaScript</span><span class="tag">File System API</span><span class="tag">CLI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 / Certifications</span>
+        <h2>Credentials</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎓</div>
+          <div class="cert-body">
+            <h3>Full Stack Web Development & DevOps</h3>
+            <p class="cert-issuer">Apna College</p>
+          </div>
+          <span class="cert-badge verified">Certified</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎓</div>
+          <div class="cert-body">
+            <h3>Full Stack Web Development — MERN Stack</h3>
+            <p class="cert-issuer">Udemy · Angela Yu</p>
+          </div>
+          <span class="cert-badge verified">Certified</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎓</div>
+          <div class="cert-body">
+            <h3>Data Structures & Algorithms</h3>
+            <p class="cert-issuer">Apna College</p>
+          </div>
+          <span class="cert-badge verified">Certified</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">📊</div>
+          <div class="cert-body">
+            <h3>Data Analytics</h3>
+            <p class="cert-issuer">Udemy · Satyajit Pattnaik</p>
+          </div>
+          <span class="cert-badge verified">Certified</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">📊</div>
+          <div class="cert-body">
+            <h3>Data Analytics</h3>
+            <p class="cert-issuer">Udemy · Krish Naik</p>
+          </div>
+          <span class="cert-badge verified">Certified</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-body">
+            <h3>Claude 101</h3>
+            <p class="cert-issuer">Anthropic</p>
+          </div>
+          <span class="cert-badge ai">AI Certified</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-body">
+            <h3>AI Fluency</h3>
+            <p class="cert-issuer">Anthropic</p>
+          </div>
+          <span class="cert-badge ai">AI Certified</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Projects -->
+  <section id="upcoming" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 / Upcoming</span>
+        <h2>What's Next</h2>
+      </div>
+      <div class="upcoming-grid">
+
+        <div class="upcoming-card reveal">
+          <div class="upcoming-status">In Progress</div>
+          <div class="upcoming-icon">🎓</div>
+          <h3>Interactive Coding Learning Platform</h3>
+          <p>A self-hosted platform for structured coding courses with in-browser code execution, progress tracking, and automated feedback — built from my experience training 300+ students.</p>
+          <div class="upcoming-progress">
+            <div class="progress-bar" data-progress="55"></div>
+            <span>55% complete</span>
+          </div>
+          <div class="upcoming-tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Monaco Editor</span><span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="upcoming-card reveal">
+          <div class="upcoming-status planned">Planned</div>
+          <div class="upcoming-icon">🤖</div>
+          <h3>AI-Powered Code Review Assistant</h3>
+          <p>A VS Code extension powered by Gemini/Claude AI that performs intelligent code reviews, suggests refactors, and flags issues inline — tailored for learners and junior developers.</p>
+          <div class="upcoming-progress">
+            <div class="progress-bar" data-progress="15"></div>
+            <span>15% complete</span>
+          </div>
+          <div class="upcoming-tags">
+            <span class="tag">TypeScript</span><span class="tag">VS Code API</span><span class="tag">Gemini AI</span>
+          </div>
+        </div>
+
+        <div class="upcoming-card reveal">
+          <div class="upcoming-status planned">Planned</div>
+          <div class="upcoming-icon">📊</div>
+          <h3>Student Progress Analytics Dashboard</h3>
+          <p>A real-time dashboard for instructors to track cohort performance, identify struggling students, and visualize learning outcomes — built on top of my AIF teaching experience.</p>
+          <div class="upcoming-progress">
+            <div class="progress-bar" data-progress="5"></div>
+            <span>5% complete</span>
+          </div>
+          <div class="upcoming-tags">
+            <span class="tag">React</span><span class="tag">Power BI</span><span class="tag">PostgreSQL</span><span class="tag">Python</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">07 / Contact</span>
+        <h2>Let's Work Together</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p>I'm open to <strong>freelance projects</strong>, <strong>full-time roles</strong>, and <strong>training engagements</strong>. Whether you need a full-stack web application built, a technical curriculum designed, or a developer to mentor your team — let's talk.</p>
+          <div class="availability-badge">
+            <span class="avail-dot"></span>
+            Available for work — New Delhi / Remote
+          </div>
+          <div class="contact-links">
+            <a href="mailto:tilakabhinesh@gmail.com" class="contact-item">
+              <span class="contact-icon">✉</span>
+              <div><strong>Email</strong><br/><span>tilakabhinesh@gmail.com</span></div>
+            </a>
+            <a href="tel:+919999719162" class="contact-item">
+              <span class="contact-icon">📱</span>
+              <div><strong>Phone</strong><br/><span>+91 9999719162</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/abhinesh-kt" target="_blank" class="contact-item">
+              <span class="contact-icon">💼</span>
+              <div><strong>LinkedIn</strong><br/><span>/in/abhinesh-kt</span></div>
+            </a>
+            <a href="https://github.com/abhineshtilak" target="_blank" class="contact-item">
+              <span class="contact-icon">🐙</span>
+              <div><strong>GitHub</strong><br/><span>@abhineshtilak</span></div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">I'm looking for</label>
+            <select id="subject">
+              <option value="">Select an option</option>
+              <option>Freelance Web Development</option>
+              <option>Technical Training / Curriculum</option>
+              <option>Full-Time Opportunity</option>
+              <option>Collaboration / Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message <span class="send-arrow">→</span></button>
+          <div class="form-success" id="formSuccess">Message sent! I'll get back to you within 24 hours. ✓</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p><strong>Abhinesh Kumar Tilak</strong> — Full-Stack Developer & Technical Trainer</p>
+      <div class="footer-links">
+        <a href="mailto:tilakabhinesh@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/abhinesh-kt" target="_blank">LinkedIn</a>
+        <a href="https://github.com/abhineshtilak" target="_blank">GitHub</a>
+        <a href="https://www.abhineshtilak.com" target="_blank">Website</a>
+      </div>
+      <p class="footer-sub">New Delhi, India · Open to Remote</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
